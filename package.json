@@ -1,0 +1,25 @@
+{
+  "name": "komp-nenter-web",
+  "version": "0.0.1",
+  "description": "Educational tool for kids to finds components of a number",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JacobOscarson/komp-nenter-web.git"
+  },
+  "keywords": [
+    "education game kids"
+  ],
+  "author": "Jacob Oscarson <jacob@414soft.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JacobOscarson/komp-nenter-web/issues"
+  },
+  "homepage": "https://github.com/JacobOscarson/komp-nenter-web#readme",
+  "dependencies": {
+    "expr-eval": "^1.0.0"
+  }
+}
