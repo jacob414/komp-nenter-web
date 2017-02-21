@@ -10,4 +10,7 @@ describe('Core functions', () => {
       chal.should.be.at.most(100);
     }
   });
+  it('Should be able to correct expressions', () => {
+    game.correct('1+1', 2).should.be.true;
+  });
 });
