@@ -20,7 +20,7 @@ describe('Core functions', () => {
 
     for(let [expr, expected] of fixtures) {
       (function(expr, expected) {
-        it('Should count ' + expected + 'points correctly for '+expr, () => {
+        it('Should count ' + expected + ' points correctly for '+expr, () => {
           game.points(expr).should.equal(expected);
         });
       })(expr, expected);
