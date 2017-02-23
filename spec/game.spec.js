@@ -13,4 +13,17 @@ describe('Core functions', () => {
   it('Should be able to correct expressions', () => {
     game.correct('1+1', 2).should.be.true;
   });
+  describe('Point counting', () => {
+
+    const fixtures = [
+      ["1+1", 1], ["1+1-2", 3], ["2*2", 4], ["10/2+1", 9], ["10", 0] ];
+
+    for(let [expr, expected] of fixtures) {
+      (function(expr, expected) {
+        it('Should count ' + expected + 'points correctly for '+expr, () => {
+          game.points(expr).should.equal(expected);
+        });
+      })(expr, expected);
+    }
+  });
 });
